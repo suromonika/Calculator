@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="index.js" defer></script>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+        max-width: 400px;
+        border: solid 4px #0f4c5c;
+        border-radius: 8px;
+        background-color: #fb8b24;
+      }
+
+      button {
+        margin: 20px 10px;
+        padding: 2px 10px;
+        border: 2px solid #0f4c5c;
+        border-radius: 8px;
+        background-color: #1e92af;
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+
+      .result-style {
+        font-size: 3rem;
+        color: #0f4c5c;
+      }
+
+      .result-container {
+        width: 250px;
+        height: 100px;
+        background-color: white;
+        margin: 30px 0px;
+        border-radius: 8px;
+      }
+
+      p {
+        width: 100%;
+        text-align: center;
+
+        line-height: 100px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div class="result-container"><p id="result"></p></div>
+      <div id="calc-data">
+        <input name="first" id="input1" type="number" />
+        <input name="second" id="input2" type="number" />
+      </div>
+      <div id="actions">
+        <button id="sum" name="sum" type="button">+</button>
+        <button id="sub" type="button">-</button>
+        <button id="div" type="button">/</button>
+        <button id="mul" type="button">*</button>
+        <button id="mod" type="button">%</button>
+        <button id="clear" type="button">Clear</button>
+      </div>
+    </main>
+  </body>
+</html>
