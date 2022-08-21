@@ -72,5 +72,7 @@ document.querySelector('#mod').addEventListener('click', (e) => {
 
 document.querySelector('#clear').addEventListener('click', (e) => {
   const result = clear();
+  document.querySelector('#input1').value = '';
+  document.querySelector('#input2').value = '';
   printOutput(result);
 });
